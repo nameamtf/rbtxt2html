@@ -1,5 +1,12 @@
 require "rbtxt2html/version"
+require "rbtxt2html/reader"
 
-module Rbtxt2html
-  # Your code goes here...
+module RbTxt2HTML
+
+  @reader = nil
+    
+  def self.convert(fname)
+    @reader = RbTxt2HTML::Reader.new(fname)
+  end
+
 end

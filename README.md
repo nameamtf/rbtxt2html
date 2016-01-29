@@ -1,4 +1,4 @@
-# RBTxt2HTML
+# RbTxt2HTML
 
 This gem receives the location of a txt file, reads it and turns it into HTML code.
 
