@@ -15,6 +15,7 @@ Besides, certains marks will change the condition of the text as a whole:
 * #RIGHT#    => will make the text to be right aligned
 * #JUSTIFY#  => will make the text to be justified
 
+If the file has no #T1# or #T2# tags the new html file will have the same name of the txt file, but for the extension. If one of the tags exists the name of the file will be a 'sanitized' version of the title. #T1#, if exixts, has precedence over #T2# when it comes to the title.
 
 ## Installation
 
@@ -34,7 +35,11 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+Include the gem in your project with
+
+```
+require 'rbtxt2html'
+```
 
 ## Development
 
