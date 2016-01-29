@@ -1,8 +1,20 @@
-# Rbtxt2html
+# RBTxt2HTML
 
-Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/rbtxt2html`. To experiment with that code, run `bin/console` for an interactive prompt.
+This gem receives the location of a txt file, reads it and turns it into HTML code.
 
-TODO: Delete this and the text above, and describe your gem
+Lines are converted to paragraphs by default, but certain marks in a line cause it to be turned into other markups:
+
+* #T1#       => will make the line to be converted to <h1></h1>
+* #T2#       => will make the line to be converted to <h2></h2>
+* #ST1#      => will make the line to be converted to <h3></h3>
+* #ST2#      => will make the line to be converted to <h4></h4>
+
+Besides, certains marks will change the condition of the text as a whole:
+
+* #LEFT#     => will make the text to be left aligned
+* #RIGHT#    => will make the text to be right aligned
+* #JUSTIFY#  => will make the text to be justified
+
 
 ## Installation
 
