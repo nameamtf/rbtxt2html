@@ -16,9 +16,30 @@ describe RbTxt2HTML do
       expect(RbTxt2HTML::Reader).not_to be nil
     end
     
-    it 'should receive a string as an initialization parameter' do
-      c = RbTxt2HTML::Reader.new("teste")
-      expect(c.is_string?).to be true
+    it 'should raise an ArgumentError (Invalid file name) if initialization parameter is not a String' do
+      expect {
+        c = RbTxt2HTML::Reader.new(2)
+      }.to raise_error(ArgumentError, 'Invalid file name.')
+    end
+    
+    it 'should raise an IOError (File not found) if initialization parameter is not a valid file' do
+      expect {
+        c = RbTxt2HTML::Reader.new('/home/edvaldo/teste2.txt')
+      }.to raise_error(IOError, 'File not found.') 
+    end
+    
+    it 'should raise an IOError (File empty) if the file is empty' do
+      expect {
+        c = RbTxt2HTML::Reader.new('/home/edvaldo/teste.txt')
+      }.to raise_error(IOError,'File empty.')
+    end
+    
+    it 'should read the file' do
+      expect(false).to be true
+    end
+    
+    it 'should return an array with the file contents one line each' do
+      expect(false).to be true
     end
 
   end
