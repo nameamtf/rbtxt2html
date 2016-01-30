@@ -11,8 +11,6 @@ Lines are converted to paragraphs by default, but certain marks in a line cause 
 * %T5%       => will make the line to be converted to html h5 tag
 * %T6%       => will make the line to be converted to html h6 tag
 
-If the file has no #T1# or #T2# tags the new html file will have the same name of the txt file, but for the extension. If one of the tags exists the name of the file will be a 'sanitized' version of the title. #T1#, if exixts, has precedence over #T2# when it comes to the title.
-
 ## Installation
 
 Add this line to your application's Gemfile:
