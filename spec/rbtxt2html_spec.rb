@@ -35,11 +35,9 @@ describe RbTxt2HTML do
     end
     
     it 'should read the file' do
-      expect(false).to be true
-    end
-    
-    it 'should return an array with the file contents one line each' do
-      expect(false).to be true
+      c = RbTxt2HTML::Reader.new('/home/edvaldo/texto.txt')
+      v = c.read_file
+      expect(v).to eq(['Este é um teste.','De leitura de arquivo.','Da gem rbtxt2html.'])
     end
 
   end
