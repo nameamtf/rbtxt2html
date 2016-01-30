@@ -14,9 +14,9 @@ Gem::Specification.new do |spec|
   spec.homepage      = "https://github.com/EdDeAlmeidaJr/rbtxt2html"
   spec.license       = "MIT"
 
-  spec.files         = `git ls-files -z`.split("\x0").reject { |f| f.match(%r{^(test|spec|features)/}) }
-  spec.bindir        = "exe"
-  spec.executables   = spec.files.grep(%r{^exe/}) { |f| File.basename(f) }
+  spec.files         = [ "CODE_OF_CONDUCT.md", "Gemfile", "LICENSE.txt", "Rakefile", "rbtxt2html.gemspec", "README.md", "lib/rbtxt2html.rb", "lib/rbtxt2html/base.rb", "lib/rbtxt2html/reader.rb", "lib/rbtxt2html/version.rb", "lib/rbtxt2html/writer.rb", "spec/rbtxt2html_spec.rb", "spec/spec_helper.rb" ]
+  spec.bindir        = "bin"
+  spec.executables   = spec.files.grep(%r{^bin/}) { |f| File.basename(f) }
   spec.require_paths = ["lib"]
 
   spec.add_development_dependency "bundler", "~> 1.11"
