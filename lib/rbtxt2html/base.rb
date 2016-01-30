@@ -7,6 +7,16 @@ module RbTxt2HTML
       true
     end
     
+    def is_array?(arr)
+      raise ArgumentError.new('Parameter is NOT an array.') unless arr.is_a? Array
+      true
+    end
+    
+    def array_not_empty?(arr)
+      raise ArgumentError.new('Lines array is empty.') unless arr.length>0
+      true
+    end    
+    
     def is_file?(fname)
       raise IOError.new('File not found.') unless File.exist?(fname)
       true
@@ -19,16 +29,6 @@ module RbTxt2HTML
     
     def has_contents?(fname)
       raise IOError.new('File empty.') if File.zero?(fname)
-      true
-    end
-    
-    def is_array?(arr)
-      raise ArgumentError.new('Parameter is NOT an array.') unless arr.is_a? Array
-      true
-    end
-    
-    def array_not_empty?(arr)
-      raise ArgumentError.new('Lines array is empty.') unless arr.length>0
       true
     end
   
