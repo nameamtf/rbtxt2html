@@ -23,6 +23,14 @@ module RbTxt2HTML
       true
     end
     
+    def read_file
+      a = []
+      File.readlines(@filename).each do |line|
+        a.push(line.gsub(/\n/, ""))
+      end
+      a
+    end
+    
   end
   
 end
