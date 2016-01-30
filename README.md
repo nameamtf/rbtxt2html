@@ -6,14 +6,10 @@ Lines are converted to paragraphs by default, but certain marks in a line cause 
 
 * %T1%       => will make the line to be converted to html h1 tag
 * %T2%       => will make the line to be converted to html h2 tag
-* %ST1%      => will make the line to be converted to html h3 tag
-* %ST2%      => will make the line to be converted to html h4 tag
-
-Besides, certains marks will change the condition of the text as a whole:
-
-* %LEFT%     => will make the text to be left aligned
-* %RIGHT%    => will make the text to be right aligned
-* %JUSTIFY%  => will make the text to be justified
+* %T3%       => will make the line to be converted to html h3 tag
+* %T4%       => will make the line to be converted to html h4 tag
+* %T5%       => will make the line to be converted to html h5 tag
+* %T6%       => will make the line to be converted to html h6 tag
 
 If the file has no #T1# or #T2# tags the new html file will have the same name of the txt file, but for the extension. If one of the tags exists the name of the file will be a 'sanitized' version of the title. #T1#, if exixts, has precedence over #T2# when it comes to the title.
 

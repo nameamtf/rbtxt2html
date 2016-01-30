@@ -13,8 +13,9 @@ describe RbTxt2HTML do
   describe RbTxt2HTML do
      
     it 'processes text lines correctly' do
-      vet = ['Este é um teste.','De leitura de arquivo.','Da gem rbtxt2html.']
-      expect(true).to eq(false)
+      RbTxt2HTML::convert('/home/edvaldo/texto.txt') 
+      arr = RbTxt2HTML::process_lines
+      expect(arr).to eq(['<p>Linha sem qualquer tag.</p>','<h1>Título 1</h1>','<h2>Título 2</h2>','<h3>Título 3</h3>','<h4>Título 4</h4>','<h5>Título 5</h5>','<h6>Título 6</h6>'])
     end
     
   end
@@ -54,13 +55,13 @@ describe RbTxt2HTML do
     it 'should read the file' do
       c = RbTxt2HTML::Reader.new('/home/edvaldo/texto.txt')
       v = c.read_file
-      expect(v).to eq(['Este é um teste.','De leitura de arquivo.','Da gem rbtxt2html.'])
+      expect(v).to eq(['Linha sem qualquer tag.','%T1% Título 1','%T2% Título 2','%T3% Título 3','%T4% Título 4','%T5% Título 5','%T6% Título 6'])
     end
 
   end
   
   describe RbTxt2HTML::Writer do
-    
+      
     it 'the class exists' do
       expect(RbTxt2HTML::Writer).not_to be nil
     end  
@@ -87,7 +88,15 @@ describe RbTxt2HTML do
       expect {
         c = RbTxt2HTML::Writer.new('/home/edvaldo/texto2.txt',[])
       }.to raise_error(ArgumentError, 'Lines array is empty.')
-    end       
+    end
+    
+    it 'should write the file' do
+      File.delete('/home/edvaldo/texto.txt.html')
+      c = RbTxt2HTML::Writer.new('/home/edvaldo/texto.txt.html',['<p>Linha sem qualquer tag.</p>','<h1>Título 1</h1>','<h2>Título 2</h2>','<h3>Título 3</h3>','<h4>Título 4</h4>','<h5>Título 5</h5>','<h6>Título 6</h6>'])
+      c.write_file
+      ff = File.exist?('/home/edvaldo/texto.txt.html')
+      expect(ff).to be true
+    end
     
   end
   
