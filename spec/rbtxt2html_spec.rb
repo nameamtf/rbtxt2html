@@ -91,7 +91,7 @@ describe RbTxt2HTML do
     end
     
     it 'should write the file' do
-      File.delete('/home/edvaldo/texto.txt.html')
+      File.delete('texto.txt.html')
       c = RbTxt2HTML::Writer.new('texto.txt.html',['<p>Linha sem qualquer tag.</p>','<h1>Título 1</h1>','<h2>Título 2</h2>','<h3>Título 3</h3>','<h4>Título 4</h4>','<h5>Título 5</h5>','<h6>Título 6</h6>'])
       c.write_file
       ff = File.exist?('texto.txt.html')
