@@ -3,6 +3,8 @@
 [![Gem Version](https://badge.fury.io/rb/rbtxt2html.svg)](https://badge.fury.io/rb/rbtxt2html)
 [![Build status](https://travis-ci.org/EdDeAlmeidaJr/rbtxt2html.svg?branch=master)](https://travis-ci.org/EdDeAlmeidaJr/rbtxt2html.svg?branch=master)
 [![Coverage Status](https://coveralls.io/repos/github/EdDeAlmeidaJr/rbtxt2html/badge.svg?branch=master)](https://coveralls.io/github/EdDeAlmeidaJr/rbtxt2html?branch=master)
+[![Code Climate](https://codeclimate.com/repos/56b8c0f316cb7c26bd002a50/badges/060c1b3c346cc72b493c/gpa.svg)](https://codeclimate.com/repos/56b8c0f316cb7c26bd002a50/feed)
+[![Issue Count](https://codeclimate.com/repos/56b8c0f316cb7c26bd002a50/badges/060c1b3c346cc72b493c/issue_count.svg)](https://codeclimate.com/repos/56b8c0f316cb7c26bd002a50/feed)
 
 This gem receives the location of a txt file, reads it and turns it into HTML code.
 
