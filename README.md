@@ -1,5 +1,8 @@
 # RbTxt2HTML
 
+[![Gem Version](https://badge.fury.io/rb/rbtxt2html.svg)](https://badge.fury.io/rb/rbtxt2html)
+
+
 This gem receives the location of a txt file, reads it and turns it into HTML code.
 
 Lines are converted to paragraphs by default, but certain marks in a line cause it to be turned into other markups:
