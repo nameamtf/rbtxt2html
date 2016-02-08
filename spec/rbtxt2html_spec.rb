@@ -13,7 +13,7 @@ describe RbTxt2HTML do
   describe RbTxt2HTML do
      
     it 'processes text lines correctly' do
-      RbTxt2HTML::convert('/home/edvaldo/texto.txt') 
+      RbTxt2HTML::convert('texto.txt') 
       arr = RbTxt2HTML::process_lines
       expect(arr).to eq(['<p>Linha sem qualquer tag.</p>','<h1>Título 1</h1>','<h2>Título 2</h2>','<h3>Título 3</h3>','<h4>Título 4</h4>','<h5>Título 5</h5>','<h6>Título 6</h6>'])
     end
