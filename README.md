@@ -1,6 +1,7 @@
 # RbTxt2HTML
 
 [![Gem Version](https://badge.fury.io/rb/rbtxt2html.svg)](https://badge.fury.io/rb/rbtxt2html)
+[![Build status](https://travis-ci.org/EdDeAlmeidaJr/rbtxt2html.svg?branch=master)](https://travis-ci.org/EdDeAlmeidaJr/rbtxt2html.svg?branch=master)
 
 
 This gem receives the location of a txt file, reads it and turns it into HTML code.
