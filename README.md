@@ -4,7 +4,6 @@
 [![Build status](https://travis-ci.org/EdDeAlmeidaJr/rbtxt2html.svg?branch=master)](https://travis-ci.org/EdDeAlmeidaJr/rbtxt2html.svg?branch=master)
 [![Coverage Status](https://coveralls.io/repos/github/EdDeAlmeidaJr/rbtxt2html/badge.svg?branch=master)](https://coveralls.io/github/EdDeAlmeidaJr/rbtxt2html?branch=master)
 
-
 This gem receives the location of a txt file, reads it and turns it into HTML code.
 
 Lines are converted to paragraphs by default, but certain marks in a line cause it to be turned into other markups:
