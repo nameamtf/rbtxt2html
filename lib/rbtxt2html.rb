@@ -48,7 +48,7 @@ module RbTxt2HTML
     ldiff = ll - ltag
     l = l[ltag,ldiff]
     l = l.strip
-    l = @@opens[i] + l + @@closes[i]
+    @@opens[i] + l + @@closes[i]
   end
 
 end
