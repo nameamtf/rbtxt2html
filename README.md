@@ -49,7 +49,7 @@ To install this gem onto your local machine, run `bundle exec rake install`. To 
 
 ## Contributing
 
-If you want to contribute to this project, your help is welcome, for sure. But please, take some note before you start, so you won't tell me you didn't knew these things beforehand:
+If you want to contribute to this project, your help is welcome, for sure. But please, read this before you start, so you won't tell me you didn't knew these things beforehand:
 
 01) We are here to develop some software, not to discuss politics, race, religion, gender or any other issue the 'politically correct' people like to raise to disguise their inability to make things happen.
 
